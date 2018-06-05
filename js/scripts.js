@@ -16,9 +16,14 @@ $(document).ready(function(){
     // list.removeChild(list.firstChild);
     // }
     $("#updated-list").empty();
-    orderedItems.forEach(function(item){
-      $("#updated-list").append('<li class="list-item">' + item + '</li>');
-    });
+
+    // orderedItems.forEach(function(item){
+    //   $("#updated-list").append('<li class="list-item">' + item + '</li>');
+    // });
+    for (i = 0; i < orderedItems.length; i++){
+      $("#updated-list").append('<li class="list-item">' + orderedItems[i] + '</li>');
+    }
+
     document.getElementById("Shopping-List").reset();
   });
 });
